@@ -137,7 +137,7 @@ const Home = () => {
                 </Button>
               </Link>
               <a href="https://maps.google.com/?q=3931+N+Ashland+Ave,+Chicago,+Illinois+60613" target="_blank" rel="noopener noreferrer">
-                <Button variant="outline" size="lg" className="w-full sm:w-auto border-tavern-light/30 text-tavern-light hover:bg-tavern-light/10 hover:border-tavern-light/50 button-tavern transition-all duration-300">
+                <Button variant="outline" size="lg" className="w-full sm:w-auto border-tavern-light/30 text-tavern-light hover:border-tavern-light/50 button-tavern transition-all duration-300 bg-zinc-900 hover:bg-zinc-800">
                   Get Directions
                 </Button>
               </a>
