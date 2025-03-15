@@ -145,7 +145,6 @@ const Specials = () => {
                 description={special.description}
                 highlight={special.highlight}
                 className="animate-fade-in"
-                style={{ animationDelay: `${index * 100}ms` }}
               />
             ))}
           </div>
@@ -166,7 +165,6 @@ const Specials = () => {
               <div 
                 key={index} 
                 className="p-6 bg-white/70 backdrop-blur-sm rounded-lg shadow-md hover:shadow-xl transition-all duration-300 animate-fade-in"
-                style={{ animationDelay: `${index * 200}ms` }}
               >
                 <div className="flex items-center mb-4">
                   <Calendar className="text-tavern-primary mr-3" size={24} />

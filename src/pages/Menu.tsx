@@ -2,7 +2,7 @@
 import { Button } from "@/components/ui/button";
 import SectionHeading from "@/components/SectionHeading";
 import MenuItem from "@/components/MenuItem";
-import { Beer, Wine, Cocktail, Coffee } from "lucide-react";
+import { CircleUser, Wine, GlassWater, Coffee } from "lucide-react";
 
 const Menu = () => {
   const beers = [
@@ -58,7 +58,7 @@ const Menu = () => {
       <section className="py-16 px-4">
         <div className="container mx-auto">
           <div className="flex items-center mb-8">
-            <Beer size={32} className="text-tavern-primary mr-4" />
+            <CircleUser size={32} className="text-tavern-primary mr-4" />
             <SectionHeading
               title="Beer Selection"
               description="Enjoy our selection of local Chicago brews and classic favorites."
@@ -74,7 +74,6 @@ const Menu = () => {
                 description={item.description}
                 price={item.price}
                 className="animate-fade-in"
-                style={{ animationDelay: `${index * 100}ms` }}
               />
             ))}
           </div>
@@ -104,7 +103,6 @@ const Menu = () => {
                 description={item.description}
                 price={item.price}
                 className="animate-fade-in"
-                style={{ animationDelay: `${index * 100}ms` }}
               />
             ))}
           </div>
@@ -118,7 +116,7 @@ const Menu = () => {
       <section className="py-16 px-4">
         <div className="container mx-auto">
           <div className="flex items-center mb-8">
-            <Cocktail size={32} className="text-tavern-primary mr-4" />
+            <GlassWater size={32} className="text-tavern-primary mr-4" />
             <SectionHeading
               title="Signature Cocktails"
               description="Classic and signature cocktails crafted by our experienced bartenders."
@@ -134,7 +132,6 @@ const Menu = () => {
                 description={item.description}
                 price={item.price}
                 className="animate-fade-in"
-                style={{ animationDelay: `${index * 100}ms` }}
               />
             ))}
           </div>
@@ -161,7 +158,6 @@ const Menu = () => {
                 description={item.description}
                 price={item.price}
                 className="animate-fade-in"
-                style={{ animationDelay: `${index * 100}ms` }}
               />
             ))}
           </div>

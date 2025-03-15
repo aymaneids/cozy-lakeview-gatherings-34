@@ -2,14 +2,16 @@
 import { useState } from "react";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { cn } from "@/lib/utils";
+import { HTMLAttributes } from "react";
 
-interface GalleryImageProps {
+interface GalleryImageProps extends HTMLAttributes<HTMLDivElement> {
   src: string;
   alt: string;
+  category?: string;
   className?: string;
 }
 
-const GalleryImage = ({ src, alt, className }: GalleryImageProps) => {
+const GalleryImage = ({ src, alt, category, className, ...props }: GalleryImageProps) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -20,6 +22,7 @@ const GalleryImage = ({ src, alt, className }: GalleryImageProps) => {
           className
         )}
         onClick={() => setIsOpen(true)}
+        {...props}
       >
         <img 
           src={src} 

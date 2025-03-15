@@ -115,7 +115,6 @@ const Gallery = () => {
                 alt={image.alt}
                 category={image.category}
                 className="animate-fade-in"
-                style={{ animationDelay: `${index * 100}ms` }}
               />
             ))}
           </div>

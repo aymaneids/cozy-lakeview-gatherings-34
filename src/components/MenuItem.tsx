@@ -1,7 +1,8 @@
 
 import { cn } from "@/lib/utils";
+import { HTMLAttributes } from "react";
 
-interface MenuItemProps {
+interface MenuItemProps extends HTMLAttributes<HTMLDivElement> {
   name: string;
   description?: string;
   price: string;
@@ -17,6 +18,7 @@ const MenuItem = ({
   category,
   isPopular = false,
   className,
+  ...props
 }: MenuItemProps) => {
   return (
     <div 
@@ -24,6 +26,7 @@ const MenuItem = ({
         "p-4 rounded-lg transition-all duration-300 group hover:bg-white/50 hover:shadow-md",
         className
       )}
+      {...props}
     >
       <div className="flex justify-between items-start gap-2">
         <div className="flex-1">
