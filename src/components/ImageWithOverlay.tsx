@@ -1,7 +1,8 @@
 
 import { cn } from "@/lib/utils";
+import { HTMLAttributes } from "react";
 
-interface ImageWithOverlayProps {
+interface ImageWithOverlayProps extends HTMLAttributes<HTMLDivElement> {
   src: string;
   alt: string;
   className?: string;
@@ -17,9 +18,10 @@ const ImageWithOverlay = ({
   imageClassName,
   overlayClassName,
   children,
+  ...props
 }: ImageWithOverlayProps) => {
   return (
-    <div className={cn("relative overflow-hidden rounded-lg", className)}>
+    <div className={cn("relative overflow-hidden rounded-lg", className)} {...props}>
       <div className="image-hover">
         <img
           src={src}

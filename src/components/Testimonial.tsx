@@ -1,7 +1,8 @@
 
 import { cn } from "@/lib/utils";
+import { HTMLAttributes } from "react";
 
-interface TestimonialProps {
+interface TestimonialProps extends HTMLAttributes<HTMLDivElement> {
   quote: string;
   author: string;
   location?: string;
@@ -13,6 +14,7 @@ const Testimonial = ({
   author,
   location,
   className,
+  ...props
 }: TestimonialProps) => {
   return (
     <div 
@@ -20,6 +22,7 @@ const Testimonial = ({
         "p-6 rounded-lg bg-white/70 backdrop-blur-sm shadow-md hover:shadow-xl transition-all duration-300",
         className
       )}
+      {...props}
     >
       <div className="mb-4 text-4xl text-tavern-primary opacity-20">"</div>
       <p className="mb-6 italic text-tavern-dark/80">{quote}</p>

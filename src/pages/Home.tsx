@@ -2,7 +2,7 @@
 import { Link } from "react-router-dom";
 import { 
   Target, 
-  Glass, 
+  Glasses, 
   Users, 
   MapPin,
   ChevronRight
@@ -110,32 +110,28 @@ const Home = () => {
           />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <FeatureCard
-              icon={Glass}
+              icon={Glasses}
               title="Full Bar"
               description="Enjoy a wide selection of beers, spirits, and cocktails crafted by our experienced bartenders."
               className="animate-fade-in"
-              style={{ animationDelay: "200ms" }}
             />
             <FeatureCard
               icon={Target}
               title="Pool Tables & Darts"
               description="Challenge your friends to a game of pool or join our popular dart leagues."
               className="animate-fade-in"
-              style={{ animationDelay: "400ms" }}
             />
             <FeatureCard
               icon={Users}
               title="Private Parties"
               description="Host your next celebration with us! Our space is perfect for birthdays, meet-ups, and special events."
               className="animate-fade-in"
-              style={{ animationDelay: "600ms" }}
             />
             <FeatureCard
               icon={MapPin}
               title="Prime Location"
               description="Conveniently located in the heart of Lakeview, just steps away from public transportation."
               className="animate-fade-in"
-              style={{ animationDelay: "800ms" }}
             />
           </div>
         </div>
@@ -155,7 +151,6 @@ const Home = () => {
               src={barImages[0]}
               alt="Ten Cat Tavern Bar Area"
               className="md:col-span-2 aspect-[16/9] animate-fade-in"
-              style={{ animationDelay: "200ms" }}
             >
               <Link to="/gallery" className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
                 <Button className="bg-tavern-primary hover:bg-tavern-primary/90 text-tavern-light button-tavern transition-all duration-300">
@@ -168,7 +163,6 @@ const Home = () => {
                 src={barImages[1]}
                 alt="Pool Table at Ten Cat Tavern"
                 className="aspect-[4/3] animate-fade-in"
-                style={{ animationDelay: "400ms" }}
               >
                 <Link to="/gallery" className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
                   <Button className="bg-tavern-primary hover:bg-tavern-primary/90 text-tavern-light button-tavern transition-all duration-300">
@@ -180,7 +174,6 @@ const Home = () => {
                 src={barImages[2]}
                 alt="Ten Cat Tavern Event"
                 className="aspect-[4/3] animate-fade-in"
-                style={{ animationDelay: "600ms" }}
               >
                 <Link to="/gallery" className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
                   <Button className="bg-tavern-primary hover:bg-tavern-primary/90 text-tavern-light button-tavern transition-all duration-300">

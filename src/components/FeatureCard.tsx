@@ -1,8 +1,9 @@
 
 import { LucideIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { HTMLAttributes } from "react";
 
-interface FeatureCardProps {
+interface FeatureCardProps extends HTMLAttributes<HTMLDivElement> {
   icon: LucideIcon;
   title: string;
   description: string;
@@ -14,12 +15,13 @@ const FeatureCard = ({
   title,
   description,
   className,
+  ...props
 }: FeatureCardProps) => {
   return (
     <div className={cn(
       "group p-6 rounded-lg transition-all duration-300 hover:shadow-xl bg-white/50 backdrop-blur-sm hover:bg-white/70",
       className
-    )}>
+    )} {...props}>
       <div className="flex flex-col gap-4">
         <div className="inline-flex p-3 rounded-md bg-tavern-primary/10 text-tavern-primary">
           <Icon size={24} strokeWidth={1.5} />
