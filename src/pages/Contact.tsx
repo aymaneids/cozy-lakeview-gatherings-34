@@ -11,7 +11,7 @@ const Contact = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center" 
           style={{ 
-            backgroundImage: `url(https://images.unsplash.com/photo-1470337458703-46ad1756a187?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80)` 
+            backgroundImage: `url(https://images.unsplash.com/photo-1544568100-847510b37020?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80)` 
           }}
         ></div>
         <div className="absolute inset-0 hero-pattern"></div>
@@ -28,7 +28,7 @@ const Contact = () => {
               <SectionHeading
                 subtitle="Get In Touch"
                 title="We'd Love to Hear From You"
-                description="Have questions about Ten Cat Tavern? Interested in hosting a private event? We're here to help."
+                description="Have questions about our training programs? Interested in scheduling a consultation? We're here to help."
                 alignment="left"
                 className="mb-8"
               />
@@ -41,8 +41,8 @@ const Contact = () => {
                   <div>
                     <h3 className="text-lg font-medium mb-1">Phone</h3>
                     <p className="text-tavern-dark/70">
-                      <a href="tel:7739355377" className="hover:text-tavern-primary transition-colors">
-                        (773) 935-5377
+                      <a href="tel:5551234567" className="hover:text-tavern-primary transition-colors">
+                        (555) 123-4567
                       </a>
                     </p>
                   </div>
@@ -55,8 +55,8 @@ const Contact = () => {
                   <div>
                     <h3 className="text-lg font-medium mb-1">Email</h3>
                     <p className="text-tavern-dark/70">
-                      <a href="mailto:tencattavern@gmail.com" className="hover:text-tavern-primary transition-colors">
-                        tencattavern@gmail.com
+                      <a href="mailto:info@theamazingpaw.com" className="hover:text-tavern-primary transition-colors">
+                        info@theamazingpaw.com
                       </a>
                     </p>
                   </div>
@@ -69,11 +69,11 @@ const Contact = () => {
                   <div>
                     <h3 className="text-lg font-medium mb-1">Address</h3>
                     <p className="text-tavern-dark/70">
-                      3931 N Ashland Ave<br />
+                      123 Main St<br />
                       Chicago, Illinois 60613
                     </p>
                     <a 
-                      href="https://maps.google.com/?q=3931+N+Ashland+Ave,+Chicago,+Illinois+60613" 
+                      href="https://maps.google.com/?q=123+Main+St,+Chicago,+Illinois+60613" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="text-tavern-primary hover:underline mt-2 inline-block"
@@ -90,24 +90,24 @@ const Contact = () => {
                   <div>
                     <h3 className="text-lg font-medium mb-1">Hours</h3>
                     <p className="text-tavern-dark/70">
-                      Monday - Friday: 4pm - 2am<br />
-                      Saturday: 12pm - 3am<br />
-                      Sunday: 12pm - 2am
+                      Monday - Friday: 9am - 7pm<br />
+                      Saturday: 10am - 5pm<br />
+                      Sunday: 12pm - 4pm
                     </p>
                   </div>
                 </div>
               </div>
               
               <div className="p-6 bg-tavern-primary/10 rounded-lg">
-                <h3 className="text-lg font-medium mb-3">For Private Event Inquiries</h3>
+                <h3 className="text-lg font-medium mb-3">For Training Inquiries</h3>
                 <p className="text-tavern-dark/70 mb-3">
-                  Interested in hosting your next gathering at Ten Cat Tavern? We offer flexible options for parties and private events.
+                  Interested in our professional dog training programs? We offer personalized consultations to discuss your pet's specific needs.
                 </p>
                 <a 
                   href="/schedule-party" 
                   className="text-tavern-primary hover:underline"
                 >
-                  Learn more about booking private events
+                  Learn more about our training programs
                 </a>
               </div>
             </div>
@@ -132,20 +132,20 @@ const Contact = () => {
         <div className="container mx-auto">
           <SectionHeading
             subtitle="Location"
-            title="Find Us in Lakeview"
-            description="We're conveniently located in the heart of Chicago's Lakeview neighborhood."
+            title="Find Us in Chicago"
+            description="We're conveniently located in the heart of the city, easily accessible by public transportation."
             className="mb-12"
           />
           <div className="rounded-lg overflow-hidden shadow-xl h-[400px]">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2967.8734899869124!2d-87.67069922412285!3d41.953214663171695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd378828a04f5%3A0xf80eb6bb7c5faf54!2sTen%20Cat%20Tavern!5e0!3m2!1sen!2sus!4v1690228743255!5m2!1sen!2sus"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d190255.33858251818!2d-87.84192066899418!3d41.83339151654435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2c3cd0f4cbed%3A0xafe0a6ad09c0c000!2sChicago%2C%20IL!5e0!3m2!1sen!2sus!4v1690228743255!5m2!1sen!2sus"
               width="100%"
               height="100%"
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Ten Cat Tavern Location Map"
+              title="The Amazing Paw Location Map"
             ></iframe>
           </div>
         </div>
