@@ -20,11 +20,6 @@ const Layout = () => {
   const navLinks = [
     { path: "/", label: "Home" },
     { path: "/about", label: "About" },
-    { path: "/schedule-party", label: "Schedule a Party" },
-    { path: "/leagues", label: "Pool & Dart Leagues" },
-    { path: "/menu", label: "Menu" },
-    { path: "/gallery", label: "Gallery" },
-    { path: "/specials", label: "Specials" },
     { path: "/contact", label: "Contact" },
   ];
 
@@ -37,15 +32,15 @@ const Layout = () => {
               <Link 
                 to="/" 
                 className="flex items-center gap-2"
-                aria-label="Ten Cat Tavern"
+                aria-label="The Amazing Paw"
               >
                 <div className="relative h-10 w-10 overflow-hidden rounded-full border-2 border-tavern-secondary">
                   <div className="absolute inset-0 bg-tavern-dark flex items-center justify-center">
-                    <span className="text-tavern-secondary font-serif font-bold text-xl">TC</span>
+                    <span className="text-tavern-secondary font-serif font-bold text-xl">AP</span>
                   </div>
                 </div>
                 <span className="font-serif text-xl font-semibold text-tavern-light">
-                  Ten Cat Tavern
+                  The Amazing Paw
                 </span>
               </Link>
             </div>
@@ -70,7 +65,7 @@ const Layout = () => {
                 </Link>
               ))}
               <a 
-                href="https://www.instagram.com/tencattavern/" 
+                href="https://www.instagram.com/theamazingpaw/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="ml-4 p-1 text-tavern-light opacity-80 hover:opacity-100 transition-opacity"
@@ -110,7 +105,7 @@ const Layout = () => {
                 </Link>
               ))}
               <a 
-                href="https://www.instagram.com/tencattavern/" 
+                href="https://www.instagram.com/theamazingpaw/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="mt-4 p-3 text-tavern-light flex items-center gap-2"
